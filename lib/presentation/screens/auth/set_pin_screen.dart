@@ -36,14 +36,15 @@ class _SetPinScreenState extends State<SetPinScreen> {
               if (pin == _firstPin) {
                 final auth = context.read<AuthProvider>();
                 final messenger = ScaffoldMessenger.of(context);
-                final router = GoRouter.of(context);
-                await auth.setPin(pin);
+
                 if (mounted) {
+                  context.go('/settings');
                   messenger.showSnackBar(
                     const SnackBar(content: Text('PIN set successfully!')),
                   );
-                  router.pop();
                 }
+
+                await auth.setPin(pin);
                 return PinResult.success;
               } else {
                 // Mismatch — restart
