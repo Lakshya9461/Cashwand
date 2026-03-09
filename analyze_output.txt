@@ -1,0 +1,5 @@
+Analyzing finance app...                                        
+
+warning - The method doesn't override an inherited method - lib\data\repositories\web_account_repository.dart:176:31 - override_on_non_overriding_member
+   info - 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion - lib\data\repositories\web_category_repository.dart:51:27 - deprecated_member_use
+

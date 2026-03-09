@@ -1,0 +1,22 @@
+Running Gradle task 'assembleRelease'...                        
+This application cannot tree shake icons fonts. It has non-constant instances of IconData at the following locations:
+  - file:///G:/pet%20projects/finance%20app/lib/core/extensions/account_entity_extensions.dart:8:14
+  - file:///G:/pet%20projects/finance%20app/lib/core/extensions/category_entity_extensions.dart:33:14
+Target aot_android_asset_bundle failed: Error: Avoid non-constant invocations of IconData or try to build again with --no-tree-shake-icons.
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildRelease'.
+> Process 'command 'C:\flutter\bin\flutter.bat'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 42s
+Running Gradle task 'assembleRelease'...                           43.0s
+Gradle task assembleRelease failed with exit code 1
