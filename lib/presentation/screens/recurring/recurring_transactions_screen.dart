@@ -626,8 +626,9 @@ class _AddRecurringModalState extends State<_AddRecurringModal> {
       if (generated > 0) {
         Future.microtask(() {
           // ignore: use_build_context_synchronously
-          if (context.mounted)
+          if (context.mounted) {
             context.read<TransactionProvider>().loadTransactions();
+          }
         });
       }
     });
